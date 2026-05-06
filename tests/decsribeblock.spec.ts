@@ -30,7 +30,7 @@ await expect(page.locator('h3[data-test="error"]')).toContainText('do not match'
 
 test.describe('cart page funstionality', async() => {
 
-test.only('should add product to cart', async({page}) => {
+test('should add product to cart', async({page}) => {
 
 await page. goto('https://www.saucedemo.com/');
 
